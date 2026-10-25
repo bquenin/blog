@@ -7,7 +7,6 @@ tags:
   - "go"
   - "programming"
   - "game-development"
-  - "golang"
 canonicalURL: "https://medium.com/better-programming/translate-any-retro-game-on-the-fly-with-google-cloud-ai-and-go-c0692ab40547"
 ogImage: "./0-90Sv8FuDbc9WE0qT.jpg"
 ---

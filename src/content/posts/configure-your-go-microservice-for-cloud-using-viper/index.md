@@ -4,7 +4,6 @@ pubDatetime: 2022-08-19T23:29:54.000Z
 description: "When it comes to configuring an application, there are plenty of options."
 tags:
   - "programming"
-  - "golang"
   - "web-development"
   - "go"
   - "microservices"

@@ -7,7 +7,6 @@ tags:
   - "api"
   - "web-development"
   - "programming"
-  - "golang"
 canonicalURL: "https://medium.com/better-programming/modern-rest-api-with-go-and-postgresql-39b0e966534a"
 ogImage: "./0-hlL8qyjq2rNmAQEe.jpg"
 ---
