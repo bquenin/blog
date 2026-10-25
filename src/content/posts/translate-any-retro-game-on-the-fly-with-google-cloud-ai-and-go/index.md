@@ -3,7 +3,7 @@ title: "Translate Any Retro Game on the Fly With Google Cloud AI and Go"
 pubDatetime: 2022-07-22T16:01:01.000Z
 description: "Reminiscing classic games? Here’s a guide for you"
 tags:
-  - "artificial-intelligence"
+  - "ai"
   - "go"
   - "programming"
   - "game-development"
