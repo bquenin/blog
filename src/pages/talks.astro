@@ -1,0 +1,126 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Main from "@/components/Main.astro";
+import Footer from "@/components/Footer.astro";
+import config from "@/config";
+
+type Talk = {
+  title: string;
+  event: string;
+  city: string;
+  date: string;
+  displayDate: string;
+  coSpeaker: string;
+  summary: string;
+  youtubeId: string;
+  links: { label: string; href: string }[];
+};
+
+// Newest first.
+const talks: Talk[] = [
+  {
+    title: "Scaling Cloud-Native CI/CD with Jenkins and the Argo Projects",
+    event:
+      "ArgoCon Europe 2024, co-located with KubeCon + CloudNativeCon Europe",
+    city: "Paris",
+    date: "2024-03-19",
+    displayDate: "March 19, 2024",
+    coSpeaker: "Caelan Urquhart (Pipekit)",
+    summary:
+      "How we scale CI/CD for more than 6,000 developers at Intuit on Kubernetes with Jenkins, where Jenkins reaches its limits, and how the Argo projects (Argo Workflows for CI, Argo CD for CD) address them.",
+    youtubeId: "7uWiTS85dKc",
+    links: [
+      {
+        label: "Video",
+        href: "https://www.youtube.com/watch?v=7uWiTS85dKc",
+      },
+      {
+        label: "Schedule",
+        href: "https://colocatedeventseu2024.sched.com/event/1YFhS/scaling-cloud-native-cicd-with-jenkins-and-the-argo-projects-caelan-urquhart-pipekit-bertrand-quenin-intuit",
+      },
+    ],
+  },
+  {
+    title: "Migrating CI/CD from Jenkins to Argo",
+    event:
+      "ArgoCon North America 2023, co-located with KubeCon + CloudNativeCon North America",
+    city: "Chicago",
+    date: "2023-11-06",
+    displayDate: "November 6, 2023",
+    coSpeaker: "Caelan Urquhart (Pipekit)",
+    summary:
+      "How Intuit runs Jenkins on Kubernetes (about 200 Jenkins controllers on a cluster of around 150 nodes), the pain points that come with it, such as performance as job counts grow and slow HA/DR failover, and what migrating CI to Argo Workflows looks like.",
+    youtubeId: "kKLIuAEc5Zw",
+    links: [
+      {
+        label: "Video",
+        href: "https://www.youtube.com/watch?v=kKLIuAEc5Zw",
+      },
+      {
+        label: "Schedule",
+        href: "https://colocatedeventsna2023.sched.com/event/1SJQJ/migrating-cicd-from-jenkins-to-argo-bertrand-quenin-intuit-caelan-urquhart-pipekitio",
+      },
+      {
+        label: "Write-up",
+        href: "https://dev.to/intuitdev/migrating-cicd-from-jenkins-to-argo-1km4",
+      },
+    ],
+  },
+];
+
+const pageTitle = "Talks";
+---
+
+<Layout
+  title={`${pageTitle} | ${config.site.title}`}
+  description="Conference talks by Bertrand Quenin, with recordings."
+>
+  <Header />
+
+  <Breadcrumb />
+
+  <Main
+    pageTitle={pageTitle}
+    pageDesc="Conference talks I've given, with recordings."
+    class="app-prose"
+  >
+    {
+      talks.map(talk => (
+        <section class="mb-12">
+          <h2 class="mt-0">{talk.title}</h2>
+          <p class="mt-0 mb-2">
+            {talk.event} · {talk.city} ·{" "}
+            <time datetime={talk.date}>{talk.displayDate}</time>
+          </p>
+          <p class="mt-0 mb-2">With {talk.coSpeaker}</p>
+          <p class="mt-0 mb-4">{talk.summary}</p>
+          <div class="border-border aspect-video w-full overflow-hidden border">
+            <iframe
+              class="size-full"
+              src={`https://www.youtube-nocookie.com/embed/${talk.youtubeId}`}
+              title={`${talk.title} (video)`}
+              loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            />
+          </div>
+          <p class="mt-3">
+            {talk.links.map((link, i) => (
+              <>
+                {i > 0 && " · "}
+                <a href={link.href} target="_blank" rel="noopener noreferrer">
+                  {link.label}
+                </a>
+              </>
+            ))}
+          </p>
+        </section>
+      ))
+    }
+  </Main>
+
+  <Footer />
+</Layout>
