@@ -26,7 +26,7 @@ export default defineAstroPaperConfig({
     search: "pagefind",
   },
   socials: [
-    { name: "github",   url: "https://github.com/bquenin" },
+    { name: "github",   url: "https://github.com/bquenin", linkTitle: "qube on GitHub" },
     { name: "linkedin", url: "https://www.linkedin.com/in/bquenin/", linkTitle: "qube on LinkedIn" },
     { name: "medium",   url: "https://medium.com/@bquenin" },
   ],
