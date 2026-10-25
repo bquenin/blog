@@ -5,7 +5,6 @@ description: "Part 1: SQL First data model with sqlc"
 tags:
   - "web-development"
   - "api"
-  - "programming"
   - "sql"
   - "go"
 canonicalURL: "https://medium.com/better-programming/modern-rest-api-with-go-and-postgresql-c765d571b9e7"

@@ -5,7 +5,6 @@ description: "Reminiscing classic games? Here’s a guide for you"
 tags:
   - "ai"
   - "go"
-  - "programming"
   - "game-development"
 canonicalURL: "https://medium.com/better-programming/translate-any-retro-game-on-the-fly-with-google-cloud-ai-and-go-c0692ab40547"
 ogImage: "./0-90Sv8FuDbc9WE0qT.jpg"

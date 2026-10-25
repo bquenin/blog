@@ -7,7 +7,6 @@ tags:
   - "web-development"
   - "testing"
   - "docker"
-  - "programming"
 canonicalURL: "https://medium.com/better-programming/modern-rest-api-with-go-and-postgresql-7c916ce2816a"
 ogImage: "./0-bcy1RcN5qtzkOYTW.jpg"
 ---
