@@ -2,7 +2,7 @@
 title: "I rebuilt my retro game translator to run fully offline"
 pubDatetime: 2026-10-25T09:45:00-07:00
 description: "Interpreter translates Japanese retro games in real time, entirely on your machine: no accounts, no API keys, no cloud. Here's why I rebuilt it, how it works, and how AI agents helped."
-tags: ["interpreter", "side-projects", "ocr", "machine-translation", "retro-games", "ai", "ai-agents"]
+tags: ["interpreter", "ocr", "machine-translation", "retro-games", "ai", "ai-agents"]
 draft: false
 ---
 
