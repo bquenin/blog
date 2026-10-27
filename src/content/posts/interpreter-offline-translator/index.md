@@ -44,7 +44,7 @@ Every refresh, Interpreter runs a four-step pipeline:
 A few details made a big difference:
 
 - **A fuzzy translation cache.** Games redraw the same dialogue box many times, and OCR output can change slightly from frame to frame. Fuzzy matching recognizes "almost the same text" and reuses the previous translation instead of translating again.
-- **One-time model download.** The first launch downloads about 1.5 GB of models. After that, everything runs from the local cache, with no network needed.
+- **One-time model download.** The first launch downloads about 1.1 GB of models. After that, everything runs from the local cache, with no network needed.
 - **A real GUI.** v2 started as a command-line tool. Four days after the first release I replaced it with a desktop app, because a CLI is exactly the kind of wall I was trying to remove.
 
 ## The hard part wasn't the AI
