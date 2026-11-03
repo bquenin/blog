@@ -58,6 +58,8 @@ That matters because most of my agent work happens when I'm not watching: overni
 
 ![A fake Apple ad: "Keep your agents running 24/7. $199", with a metal clip holding a MacBook lid slightly open](./keep-agents-running.jpg)
 
+_Via [@dedene on X](https://x.com/dedene/status/2081027196697850248)._
+
 ## What's not great yet
 
 It's an early project, and it shows:
