@@ -22,8 +22,6 @@ Every conversation is a thread, and every thread picks its provider and model. T
 
 That sounds small. In practice it changed how I pick agents: switching costs nothing, so I use whichever one fits the task instead of whichever one is already open. Since I started using T3 Code in September, I've run roughly 240 Claude threads, 200 Cursor threads and 70 Codex threads through it.
 
-Agents can also hand work to each other. T3 Code gives every agent a built-in MCP server, so a Claude thread can delegate a sub-task to Codex or Cursor and get the result back, without me copying anything between windows.
-
 ## Threads as an inbox
 
 With a dozen agents running, the hard problem is attention, not compute. The email comparison goes further than the sidebar:
@@ -40,7 +38,7 @@ This is the part I think is most underrated: agents can use T3 Code itself.
 
 Everyone knows about subagents by now. An agent hands a sub-task to a helper, waits for the answer and carries on, and T3 Code does that too, across providers. But real work doesn't always fit that shape. An agent fixing a build notices a second, unrelated bug. Another one finds something that matters to a thread I started yesterday. A subagent would either derail the current task or lose the finding when it returns.
 
-Through that same built-in MCP server, an agent can do what I would do by hand:
+T3 Code gives every agent a built-in MCP server. Through it, an agent can do what I would do by hand:
 
 - **Message an existing thread** that owns related work, so the finding lands where the context already is.
 - **Start a new thread** for the side problem, so it gets its own focus and shows up in my inbox.
