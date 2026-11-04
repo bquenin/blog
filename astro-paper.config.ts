@@ -28,6 +28,7 @@ export default defineAstroPaperConfig({
   socials: [
     { name: "github",   url: "https://github.com/bquenin", linkTitle: "qube on GitHub" },
     { name: "linkedin", url: "https://www.linkedin.com/in/bquenin/", linkTitle: "qube on LinkedIn" },
+    { name: "x",        url: "https://x.com/bquenin", linkTitle: "qube on X" },
     { name: "medium",   url: "https://medium.com/@bquenin" },
   ],
   shareLinks: [
