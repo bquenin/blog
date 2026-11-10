@@ -59,6 +59,11 @@
       @apply opacity-75;
     }
 
+    /* An italic-only paragraph right after an image is its caption. */
+    p:has(> img:only-child) + p:has(> em:only-child) {
+      @apply -mt-3 text-center text-sm opacity-75;
+    }
+
     table {
       th,
       td {
